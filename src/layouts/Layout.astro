@@ -32,11 +32,30 @@ const makeTitle = title
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="This is the first EuroVis Workshop on Visualization Play, Games, and Activities that is collocated with the EuroVis 2025 conference.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://visgames2025.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VisGames 2025 Workshop">
+    <meta property="og:description" content="This is the first EuroVis Workshop on Visualization Play, Games, and Activities that is collocated with the EuroVis 2025 conference.">
+    <meta property="og:image" content="https://visgames2025.netlify.app/opengraph.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="visgames2025.netlify.app">
+    <meta property="twitter:url" content="https://visgames2025.netlify.app/">
+    <meta name="twitter:title" content="Visgames 2025 Workshop">
+    <meta name="twitter:description" content="This is the first EuroVis Workshop on Visualization Play, Games, and Activities that is collocated with the EuroVis 2025 conference.">
+    <meta name="twitter:image" content="https://visgames2025.netlify.app/opengraph.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="This is the first EuroVis Workshop on Visualization Play, Games, and Activities that is collocated with the EuroVis 2025 conference."
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -47,11 +66,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `VisGames 2025 Workshop`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "VisGames Homepage Screenshot",
         },
       }}
     />
