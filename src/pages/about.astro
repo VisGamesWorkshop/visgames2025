@@ -33,12 +33,13 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             </div> */}
 
             <div class="mt-4 text-center">
-                <h2 class="text-lg text-gray-800 flex items-center justify-center space-x-2">
-                <a href={teamMemberEntry.data.homepage} class="text-blue-500 hover:underline">
-                  <Icon class="text-black w-8 h-8" name="bx:user-circle" />
-                </a>
+                <a href={teamMemberEntry.data.homepage} class="text-blue-500 hover:underline"
+                title={teamMemberEntry.data.name}>
+                <h2 class="text-lg text-gray-800 flex items-center justify-center space-x-2 underline">
+                  <Icon class="text-black w-6 h-6" name="bx:user-circle" />
                 <span>{teamMemberEntry.data.name}</span>
                 </h2>
+                </a>
               <h3 class="text-md text-slate-500 mb-2">
                 {teamMemberEntry.data.affiliation}
               </h3>
@@ -46,8 +47,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <p style="text-align: justify; text-justify: inter-word; word-break: break-word;">
                 {teamMemberEntry.data.description}
               </p>
-
-            
             </div>
           </div>
         ))
