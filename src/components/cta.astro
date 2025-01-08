@@ -1,17 +1,36 @@
 ---
 import Link from "./ui/link.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
-  <h2 class="text-white text-4xl md:text-6xl tracking-tight">
-    Build faster websites.
+  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center">
+  <h2 class="text-white text-3xl md:text-4xl tracking-tight">
+    Submission Guidelines and Reviewing Process
   </h2>
   <p class="text-slate-400 mt-4 text-lg md:text-xl">
-    Pull content from anywhere and serve it fast with Astro's next-gen island
-    architecture.
+    The workshop's extended abstract will be peer-reviewed by at least two PC members and one workshop organizer.
   </p>
-  <div class="flex mt-5">
-    <Link href="#" style="inverted">Get Started</Link>
-  </div>
+  <p class="text-slate-400 mt-4 text-lg md:text-xl">
+    The maximum length for the extended abstract to the VisGames workshop is 2-6 pages including all images, acknowledgements, and references.
+    In the template you will find a proposed structure for the extended abstract.
+  </p>
+  <p class="text-slate-400 mt-4 text-lg md:text-xl">
+    Submissions must be made using the Computer Graphics Forum style, using the
+    conference LaTeX template for workshops
+  </p>
+<div class="flex mt-5">
+  <Link
+    size="lg"
+    style="outline"
+    rel="noopener"
+    href="/template.zip"
+    class="flex gap-1 items-center justify-center"
+    target="_blank"
+    download="template.zip">
+    <Icon class="text-black w-8 h-8" name="bx:download" />
+    Download VisGames Template
+  </Link>
+</div>
+
 </div>
