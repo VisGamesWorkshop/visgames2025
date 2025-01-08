@@ -11,12 +11,10 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 ---
-
-<Layout title="About">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">Workshop Organizers</Fragment>
-    </Sectionhead>
+<div class="mt-16 md:mt-0">
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl text-center font-bold lg:tracking-tight xl:tracking-tighter">
+    Workshop Organizers
+    </h1>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
@@ -55,5 +53,4 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         ))
       }
     </div>
-  </Container>
-</Layout>
+  </div>
