@@ -27,7 +27,9 @@ import { Icon } from "astro-icon/components";
     href="/template.zip"
     class="flex gap-1 items-center justify-center"
     target="_blank"
-    download="template.zip">
+    href="javascript:void(0)"
+    class="flex gap-1 ml-2 items-center justify-center cursor-not-allowed opacity-50"
+    disabled>
     <Icon class="text-black w-8 h-8" name="bx:download" />
     VisGames Template
   </Link>
@@ -36,8 +38,9 @@ import { Icon } from "astro-icon/components";
     style="outline"
     rel="noopener"
     target="_blank"
-    href="https://new.precisionconference.com/submissions"
-    class="flex gap-1 ml-2 items-center justify-center">
+    href="javascript:void(0)"
+    class="flex gap-1 ml-2 items-center justify-center cursor-not-allowed opacity-50"
+    disabled>
     <Icon class="text-black w-8 h-8" name="bx:upload" />
     Submit to PCS
   </Link>
